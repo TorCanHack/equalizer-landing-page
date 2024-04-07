@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  width: min(95%, 375px);
+  text-align: left;
+}
+body main .logo-top {
+  position: relative;
+  right: 4rem;
+}
+body main h1 {
+  font-size: 2.5rem;
+  line-height: 48px;
+  color: #191826;
+  padding: 0 48px;
+}
+body main .pitch-text1 {
+  line-height: 26px;
+  padding: 0 16px 0 48px;
+}
+body main img {
+  width: 208px;
+  height: 430px;
+  margin-bottom: -23rem;
+  z-index: 100;
+}
+body main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #191826;
+  width: 100%;
+  border-radius: 1rem;
+}
+body main article {
+  z-index: 99;
+  margin-top: -3rem;
+  background-color: #FA7453;
+  color: #FCFAF9;
+  height: 546px;
+  border-radius: 1rem;
+  padding: 0 2rem;
+}
+body main article h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+body main article p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 28px;
+}
+body main article p span {
+  font-size: 4.063rem;
+  font-weight: bold;
+  position: relative;
+  top: 1rem;
+  padding-right: 12px;
+}
+body main article button {
+  position: relative;
+  left: 7px;
+}
+body main article .ios-button {
+  width: 296px;
+  height: 61px;
+  background-color: #191826;
+  border: none;
+  border-radius: 1rem;
+  color: #FCFAF9;
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+body main article .ios-button svg {
+  margin: 0 10px;
+}
+body main article .android-button {
+  width: 296px;
+  height: 61px;
+  background-color: #FCFAF9;
+  border: none;
+  border-radius: 1rem;
+  color: #191826;
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0;
+}
+body main article .android-button svg {
+  margin: 0 10px;
+}
+body footer {
+  width: min(95%, 375px);
+  padding: 0 4rem;
+  height: 300px;
+  text-align: left;
+  padding: 0 1rem;
+}
+body footer .footer-logo {
+  margin-top: 3rem;
+}
+body footer p {
+  padding-right: 5rem;
+  line-height: 26px;
+}
+body footer div svg {
+  margin: 0 10px;
+}/*# sourceMappingURL=styles.css.map */

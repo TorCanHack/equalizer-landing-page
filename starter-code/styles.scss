@@ -1,0 +1,185 @@
+$veryLightOrange: #FCFAF9;
+$veryDarkBlue: #191826;
+$softRed: #FA7453;
+$lightOrange:  #FFB964;
+$lightCyan: #66E2DC;
+
+@mixin center-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-content-row {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ body {
+
+    @include center-content;
+    font-family: "IBM Plex Sans", sans-serif;
+
+    main {
+
+        @include center-content;
+        background-image: url("assets/bg-main-mobile.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+        width: min(95%, 375px);
+        text-align: left;
+
+        .logo-top {
+            position: relative;
+            right: 4rem;
+        }
+        
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 48px;
+            color: $veryDarkBlue;
+            padding: 0 48px;
+            
+        }
+
+        .pitch-text1 {
+            line-height: 26px;
+            padding: 0 16px 0 48px;
+            
+            
+        }
+
+        img {
+
+            width: 208px;
+            height: 430px;
+            margin-bottom: -23rem;
+            z-index: 100;
+        }
+
+        div {
+
+            @include center-content;
+            background-color: $veryDarkBlue;
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        article {
+            z-index: 99;
+            margin-top: -3rem;
+            background-color: $softRed;
+            color: $veryLightOrange;
+            height: 546px;
+            border-radius: 1rem;
+            padding: 0 2rem;
+            
+
+            h2 {
+                font-size: 2rem;
+                margin-top: 3rem;
+                
+            }
+
+            p {
+                font-size: 1.125rem;
+                font-weight: 200;
+                line-height: 28px;
+
+                span {
+
+                    font-size: 4.063rem;
+                    font-weight: bold;
+                    position: relative;
+                    top: 1rem;
+                    padding-right: 12px;
+                }
+            }
+
+            button {
+                position: relative;
+                left: 7px;
+            }
+
+            .ios-button{
+
+                width: 296px;
+                height: 61px;
+                background-color: $veryDarkBlue;
+                border: none;
+                border-radius: 1rem;
+                color: $veryLightOrange;
+                font-size: 1.125rem;
+                @include center-content-row;
+                margin-top: 2rem;
+
+                svg {
+
+                    margin: 0 10px;
+                }
+
+
+            }
+
+            .android-button {
+
+                width: 296px;
+                height: 61px;
+                background-color: $veryLightOrange;
+                border: none;
+                border-radius: 1rem;
+                color: $veryDarkBlue;
+                font-size: 1.125rem;
+                @include center-content-row;
+                margin: 14px 0;
+
+                svg {
+
+                    margin: 0 10px;
+                }
+  
+
+            }
+        }
+    }
+
+    footer {
+        width: min(95%, 375px);
+        padding: 0 4rem;
+        height: 300px;
+        text-align: left;
+        padding: 0 1rem;
+
+
+        .footer-logo {
+            margin-top: 3rem;
+        }
+
+        p {
+            padding-right: 5rem;
+            line-height: 26px;
+        }
+
+        div {
+            
+
+            svg {
+
+                margin: 0 10px;
+            }
+        }
+    }
+
+
+}
