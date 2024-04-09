@@ -22,6 +22,7 @@ $lightCyan: #66E2DC;
 
 * {
     box-sizing: border-box;
+    
 }
 
  body {
@@ -34,14 +35,19 @@ $lightCyan: #66E2DC;
         @include center-content;
         background-image: url("assets/bg-main-mobile.png");
         background-repeat: no-repeat;
-        background-position: top;
-        background-size: contain;
+        background-position: left  top -15rem;
         width: min(95%, 375px);
         text-align: left;
+        
 
         .logo-top {
             position: relative;
             right: 4rem;
+            margin-top: 3rem;
+        }
+
+        .bg-pattern1 {
+            display: none;
         }
         
 
@@ -50,6 +56,7 @@ $lightCyan: #66E2DC;
             line-height: 48px;
             color: $veryDarkBlue;
             padding: 0 48px;
+            margin-top: 4rem;
             
         }
 
@@ -181,5 +188,216 @@ $lightCyan: #66E2DC;
         }
     }
 
+    @media screen and (min-width: 768px) {
 
+        overflow-x: hidden;
+
+        main {
+
+            width: 768px;
+            background-image: url("assets/bg-main-tablet.png");
+            background-repeat: no-repeat;
+            background-position: left -9rem top -7rem;
+            background-size: 900px;
+            overflow: hidden;
+            
+            
+
+            .bg-pattern1 {
+                display: flex;
+                position: relative;
+                left: 17rem;
+                bottom: 8rem;
+            }
+
+            .logo-top {
+                position: relative;
+                right: 16rem;
+
+            }
+
+            h1 {
+
+                font-size: 4rem;
+                line-height: 4rem;
+                padding-right: 10rem;
+                position: relative;
+                bottom: 24rem;
+            }
+
+            .pitch-text1 {
+
+                position: relative;
+                bottom: 26rem;
+                font-size: 1.125rem;
+                padding-right: 12rem;
+                
+            }
+
+            img {
+
+                width: 270px;
+                height: 556px;
+                position: relative;
+                bottom: 20rem;
+                right: 10rem;
+            }
+
+            div {
+
+                margin-top: -24rem;
+                width: 696px;
+                height: 600px;
+
+                svg {
+
+                    margin-top: -14rem;
+                }
+            }
+
+            article {
+
+                width: 399px;
+                z-index: 100;
+                position: relative;
+                bottom: 24rem;
+                left: 5rem;
+                margin-bottom: -24rem;
+
+            }
+
+
+        }
+
+        footer {
+            width: 768px;
+            padding: 0 2rem;
+
+            p {
+                padding-right: 26rem;
+            }
+
+            div {
+                position: relative;
+                left: 37rem;
+                bottom: 5rem;
+            }
+        }
+        
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        main {
+
+            width: 1440px;
+            background-image: url("assets/bg-main-desktop.png");
+            background-size: cover;
+
+            .logo-top {
+                right: 31rem;
+            }
+
+            .bg-pattern1 {
+
+                left: 34.5rem;
+            }
+
+            h1 {
+
+                font-size: 5.5rem;
+                line-height: 5.5rem;
+                padding-right: 20rem;
+                left: 6rem;
+            }
+
+            .pitch-text1 {
+                font-size: 1.25rem;
+                padding-right: 33rem;
+                left: 6rem;
+            }
+
+            img {
+                width: 312px;
+                height: 642px;
+                right: 14.5rem;
+            }
+
+            div {
+
+                width: 1110px;
+                
+                
+            }
+
+            article {
+
+                width: 446px;
+                height: 625px;
+                left: 19rem;
+                bottom: 29rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 3rem;
+
+                h2 {
+
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    line-height: 34px;
+                }
+
+                .ios-button, .android-button {
+                    width: 333px;
+                }
+
+                .ios-button:hover {
+
+                    background-color: $lightCyan;
+                    cursor: pointer;
+                }
+
+                .android-button:hover {
+
+                    background-color: $lightOrange;
+                    cursor: pointer;
+                }
+            }
+
+            
+        }
+
+        footer {
+
+            width: 1440px;
+
+            .footer-logo {
+                position: relative;
+                top: 5rem;
+                left: 9rem;
+            }
+        
+
+            p {
+                padding-right: 58rem;
+                position: relative;
+                left: 30rem;
+            }
+
+            div {
+                left: 70rem;
+
+                svg:hover {
+                    background-color: $lightOrange;
+                    cursor: pointer;
+                }
+            }
+
+        }
+        
+    }
 }

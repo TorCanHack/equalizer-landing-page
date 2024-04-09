@@ -16,20 +16,24 @@ body main {
   align-items: center;
   background-image: url("assets/bg-main-mobile.png");
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
+  background-position: left top -15rem;
   width: min(95%, 375px);
   text-align: left;
 }
 body main .logo-top {
   position: relative;
   right: 4rem;
+  margin-top: 3rem;
+}
+body main .bg-pattern1 {
+  display: none;
 }
 body main h1 {
   font-size: 2.5rem;
   line-height: 48px;
   color: #191826;
   padding: 0 48px;
+  margin-top: 4rem;
 }
 body main .pitch-text1 {
   line-height: 26px;
@@ -129,4 +133,155 @@ body footer p {
 }
 body footer div svg {
   margin: 0 10px;
+}
+@media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  body main {
+    width: 768px;
+    background-image: url("assets/bg-main-tablet.png");
+    background-repeat: no-repeat;
+    background-position: left -9rem top -7rem;
+    background-size: 900px;
+    overflow: hidden;
+  }
+  body main .bg-pattern1 {
+    display: flex;
+    position: relative;
+    left: 17rem;
+    bottom: 8rem;
+  }
+  body main .logo-top {
+    position: relative;
+    right: 16rem;
+  }
+  body main h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding-right: 10rem;
+    position: relative;
+    bottom: 24rem;
+  }
+  body main .pitch-text1 {
+    position: relative;
+    bottom: 26rem;
+    font-size: 1.125rem;
+    padding-right: 12rem;
+  }
+  body main img {
+    width: 270px;
+    height: 556px;
+    position: relative;
+    bottom: 20rem;
+    right: 10rem;
+  }
+  body main div {
+    margin-top: -24rem;
+    width: 696px;
+    height: 600px;
+  }
+  body main div svg {
+    margin-top: -14rem;
+  }
+  body main article {
+    width: 399px;
+    z-index: 100;
+    position: relative;
+    bottom: 24rem;
+    left: 5rem;
+    margin-bottom: -24rem;
+  }
+  body footer {
+    width: 768px;
+    padding: 0 2rem;
+  }
+  body footer p {
+    padding-right: 26rem;
+  }
+  body footer div {
+    position: relative;
+    left: 37rem;
+    bottom: 5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body main {
+    width: 1440px;
+    background-image: url("assets/bg-main-desktop.png");
+    background-size: cover;
+  }
+  body main .logo-top {
+    right: 31rem;
+  }
+  body main .bg-pattern1 {
+    left: 34.5rem;
+  }
+  body main h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    padding-right: 20rem;
+    left: 6rem;
+  }
+  body main .pitch-text1 {
+    font-size: 1.25rem;
+    padding-right: 33rem;
+    left: 6rem;
+  }
+  body main img {
+    width: 312px;
+    height: 642px;
+    right: 14.5rem;
+  }
+  body main div {
+    width: 1110px;
+  }
+  body main article {
+    width: 446px;
+    height: 625px;
+    left: 19rem;
+    bottom: 29rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 3rem;
+  }
+  body main article h2 {
+    font-size: 2.5rem;
+  }
+  body main article p {
+    font-size: 1.25rem;
+    line-height: 34px;
+  }
+  body main article .ios-button, body main article .android-button {
+    width: 333px;
+  }
+  body main article .ios-button:hover {
+    background-color: #66E2DC;
+    cursor: pointer;
+  }
+  body main article .android-button:hover {
+    background-color: #FFB964;
+    cursor: pointer;
+  }
+  body footer {
+    width: 1440px;
+  }
+  body footer .footer-logo {
+    position: relative;
+    top: 5rem;
+    left: 9rem;
+  }
+  body footer p {
+    padding-right: 58rem;
+    position: relative;
+    left: 30rem;
+  }
+  body footer div {
+    left: 70rem;
+  }
+  body footer div svg:hover {
+    background-color: #FFB964;
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=styles.css.map */
